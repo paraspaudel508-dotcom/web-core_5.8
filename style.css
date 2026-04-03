@@ -12,7 +12,6 @@ body{
 
 
 .header{
-    width: 768px;
     height: 88px;
     background-color: #80949f;
     padding: 20px;
@@ -28,8 +27,7 @@ body{
     }
      .main-background{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        width: 769px;
+        grid-template-columns: 1fr 1f
         height: 416px;
         top: 88px;
         background-color: #F8F8F8;
