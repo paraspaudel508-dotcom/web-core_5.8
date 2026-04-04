@@ -11,11 +11,13 @@ body {
 }
 
 .main-container {
-    width: 100%;
+    width: 784px;
     background: #FFFFFF;
 }
 
 .header {
+    width: 768px;
+    height: 88px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,12 +56,15 @@ body {
 }
 
 .content{
+    width: 769px;
+    height: 416px;
     margin: 18px;
     background-color: #f8f8f8;
     border-top: 1px solid #00f2ff;
 }
 
 .title{
+    height:40px;
     border-left: 4px solid #00f2ff;
 }
 
@@ -125,3 +130,4 @@ h1 {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
