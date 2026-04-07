@@ -52,6 +52,10 @@ body {
     font-style: TT Lakes Neue Trial, sans-serif;
 }
 
+.pc-only {
+    display: none;
+}
+
 /* Tabs - Scrollable on mobile */
 .tabs {
     height: 40px;
@@ -60,8 +64,8 @@ body {
     gap: 20px;
     white-space: nowrap;
     margin-left: 16px;
+    background-color: bisque;
     scrollbar-width: none;
- /* Hide scrollbar for clean look */
 }
 
 .tabs div {
@@ -84,6 +88,7 @@ body {
 .content {
     background-color: #f8f8f8;
     border-top: 1px solid #b8ffec;
+    background-color: purple;
 
 }
 .leftcontent {
@@ -122,6 +127,8 @@ body {
         display: flex;
         justify-content: space-between;
     }
+
+    
     
     .divider1 {
         display: block;
@@ -131,6 +138,7 @@ body {
     .tabs {
         justify-content: space-between;
     }
+
     .tab5, .tab7 {
         display:none;
     }
@@ -139,6 +147,11 @@ body {
         flex-direction: row; /* Split image and text */
         align-items: flex-start;
     }
+
+    .para1,.para2 {
+        display: block;
+    }
+
 
     .text {
         flex: 1;
@@ -149,37 +162,52 @@ body {
     }
 }
 
-/* --- Media Query: Desktop (1120px+) --- */
-@media (min-width: 1120px) {
+/* --- Desktop 1120px --- */
+@media (min-width: 1120px){
+
     .main-container {
-        padding: 32px 64px;
+        margin-top: 20px;
+    }
+    
+    .header{
+        display: none;
     }
 
-    .header {
-        padding: 16px 32px;
-    }
-
-    .divider1, .divider2 {
+    .pc-only {
         display: block;
-        width: 1px;
-        height: 32px;
-        background: #EAEAEA;
-        margin: 0 10px;
+        margin: 20px 10px;
     }
 
-    /* Show the text labels next to icons on Desktop */
-    .header-action {
+    .content{
+        border-top: none;
+       
+    }
+
+    .content-all {
         display: flex;
-        align-items: center;
-        gap: 8px;
+        justify-content: space-between;
     }
 
-    .header-action span {
-        display: inline;
-    }
 
     .tabs {
-        flex-wrap: wrap; /* Tabs wrap on desktop instead of scrolling */
+        flex-wrap: wrap; 
         overflow: visible;
+        justify-content: space-evenly;
+    }
+
+    .tab1, .tab5, .tab7 {
+        display: block;
+    }
+
+    .tabs .tab2 {
+        background: transparent;
+        border: none;
+    }
+
+    .tabs .tab1 {
+        background: #fff;
+        border: 1px solid #b8ffec;
+        border-radius: 5px;
+        padding-right: 25px;
     }
 }
