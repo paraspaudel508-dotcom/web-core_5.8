@@ -170,7 +170,7 @@ body {
 }
 
 /* --- Desktop 1120px --- */
-@media (min-width: 1120px){
+@media (min-width: 1063px){
 
     .main-container {
         margin-top: 20px;
@@ -198,7 +198,6 @@ body {
 
     .tabs {
         flex-wrap: wrap; 
-        overflow: visible;
         justify-content: space-evenly;
     }
 
@@ -220,5 +219,11 @@ body {
 
     .tab3{
         display:none;
+    }
+
+    .tab7{
+        display: flex;
+        justify-content: start;
+        align-items: center;
     }
 }
