@@ -4,16 +4,18 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: TT Lakes Neue Trial, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
 }
-
+body{
+    background-color: #f8f8f8
+}
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 88px;
-    
     margin: 0px 20px 0px 20px;
+    background-color: #fff;
 }
 
 .header-left, .header-middle, .header-right {
@@ -53,33 +55,33 @@
     border-left: 4px solid #41f6d7;
     padding-left: 12px;
     margin-bottom: 24px;
-    font-style: TT Lakes Neue Trial, sans-serif;
+    font-style: Roboto, sans-serif;
 }
 
 .pc-only {
     display: none;
 }
 
-.tabs {
+.tab {
     height: 40px;
     display: flex;
     overflow-x: auto;
     gap: 20px;
     white-space: nowrap;
     margin-left: 16px;
-    scrollbar-width: none;
+    scrollbar-width: auto;
 }
 
-.tabs div {
+.tab div {
     color: #7e7e82;
     padding: 5px 16px;
     border: 1px solid transparent;
 }
-.tab1 {
+.tab__1 {
     display:none;
 }
 
-.tabs .active {
+.tab .active {
     background: #fff;
     border: 1px solid #b8ffec;
     border-radius: 5px;
@@ -102,7 +104,7 @@
     display:none;
 }
 .text p {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.6;
     margin-bottom: 15px;
 }
@@ -136,11 +138,12 @@
 
    
     }
-    .tabs {
+    .tab {
         justify-content: space-between;
+        scrollbar-width: auto;
     }
 
-    .tab5, .tab7 {
+    .tab__5, .tab__7 {
         display:none;
     }
 
@@ -151,6 +154,7 @@
 
     .para1,.para2 {
         display: block;
+        font-size: 20px;
     }
 
 
@@ -176,7 +180,7 @@
 
     .pc-only {
         display: block;
-        margin: 20px 10px;
+        margin: 20px 20px;
     }
 
     .content{
@@ -190,32 +194,32 @@
     }
 
 
-    .tabs {
+    .tab {
         flex-wrap: wrap; 
         justify-content: space-evenly;
     }
 
-    .tab1, .tab5, .tab7 {
+    .tab__1, .tab__5, .tab__7 {
         display: block;
     }
 
-    .tabs .tab2 {
+    .tab .tab__2 {
         background: transparent;
         border: none;
     }
 
-    .tabs .tab1 {
+    .tab .tab__1 {
         background: #fff;
         border: 1px solid #b8ffec;
         border-radius: 5px;
         padding-right: 25px;
     }
 
-    .tab3{
+    .tab__3{
         display:none;
     }
 
-    .tab7{
+    .tab__7{
         display: flex;
         justify-content: start;
         align-items: center;
